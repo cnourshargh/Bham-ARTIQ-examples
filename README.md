@@ -25,3 +25,10 @@ Code demonstrating basic use of TTL input channel as Trigger
 - Scans TTL input for rising edges for fixed interval
 - Gives TTL output if rising edge is detected in time interval
   - Timing is deterministic between input and output
+#### Sampler_SingleSample.py
+Code demonstrating basic use of sampler to read voltage on up to 8 channels
+- Initialises and sets gains on all sampler channels
+- Creates list for sample data
+- Saves samples to list
+- Prints list
+####
