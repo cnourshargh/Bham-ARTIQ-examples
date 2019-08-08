@@ -3,7 +3,7 @@ A repository of simple examples of ARTIQ code
 
 ## Examples
 #### LED_OnOffPulse.py
-Code demonstrating basic use of the LEDs on the Kasli Board
+Code demonstrating basic use of an LED on the Kasli Board
 - Switch LED on
 - Switch LED off
 - Pulse LED
@@ -16,3 +16,7 @@ Code demonstrating basic use of a TTL output channel
 - Switch TTL output on
 - Switch TTL output off
 - Pulse TTL output
+#### TTLin_SingleRead.py
+Code demonstrating basic reading of a TTL input channel
+- Reads TTL input (1 or 0)
+- Prints TTL input
