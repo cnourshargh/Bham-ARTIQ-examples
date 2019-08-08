@@ -20,3 +20,8 @@ Code demonstrating basic use of a TTL output channel
 Code demonstrating basic reading of a TTL input channel
 - Reads TTL input (1 or 0)
 - Prints TTL input
+#### TTLin_Trigger.py
+Code demonstrating basic use of TTL input channel as Trigger
+- Scans TTL input for rising edges for fixed interval
+- Gives TTL output if rising edge is detected in time interval
+  - Timing is deterministic between input and output
