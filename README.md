@@ -31,4 +31,13 @@ Code demonstrating basic use of sampler to read voltage on up to 8 channels
 - Creates list for sample data
 - Saves samples to list
 - Prints list
-####
+#### Zotino_SingleWrite.py
+Code demonstrating basic use of Zotino to output voltage
+- Writes voltage to DAC
+- Loads voltage to output channel
+#### Urukul_SingleOutput.py
+Code demonstrating basic use of Urukul to output fixed frequency and amplitude waveform
+- Sets frequency, amplitude, and channel attenuation as variables
+- Switches channel on
+- Writes  amplitude and frequency to urukul
+- witches channel off
