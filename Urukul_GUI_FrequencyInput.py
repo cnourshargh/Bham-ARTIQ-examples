@@ -5,7 +5,7 @@ from artiq.experiment import*                                   #imports everyth
 #The ouput persists for 2 seconds and the turns off
 
 class tutorial_urukulFreqScan(EnvExperiment):
-    """Urukul Selectable Frequency, Amplitude,  Pulse"""
+    """Urukul Selectable Frequency"""
     def build(self): #This code runs on the host device
         
         self.setattr_device("core")                                                         #sets core device drivers as attributes
