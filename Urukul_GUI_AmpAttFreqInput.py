@@ -9,12 +9,12 @@ class tutorial_urukulFreqScan(EnvExperiment):
     def build(self): #This code runs on the host device
         
 
-        print(self.setattr_device("core"))                                  #sets core device drivers as attributes
-        self.setattr_device("urukul0_ch1")                                  #sets urukul0, channel 1 device drivers as attributes
+        self.setattr_device("core")                                                     #sets core device drivers as attributes
+        self.setattr_device("urukul0_ch1")                                              #sets urukul0, channel 1 device drivers as attributes
         self.setattr_argument("freq", NumberValue(ndecimals=0, unit="MHz", step=1))     #instructs dashboard to take input and set it as an attribute called freq
-        self.setattr_argument("amp", NumberValue(ndecimals=2, step=1))     #instructs dashboard to take input and set it as an attribute called freq
-        self.setattr_argument("atten", NumberValue(ndecimals=0, step=1))     #instructs dashboard to take input and set it as an attribute called freq
-        self.setattr_argument("t_pulse", NumberValue(ndecimals=0, unit = "s", step=1))     #instructs dashboard to take input and set it as an attribute called freq
+        self.setattr_argument("amp", NumberValue(ndecimals=2, step=1))                  #instructs dashboard to take input and set it as an attribute called freq
+        self.setattr_argument("atten", NumberValue(ndecimals=0, step=1))                #instructs dashboard to take input and set it as an attribute called freq
+        self.setattr_argument("t_pulse", NumberValue(ndecimals=0, unit = "s", step=1))  #instructs dashboard to take input and set it as an attribute called freq
         
     
     @kernel #This code runs on the FPGA
@@ -32,5 +32,5 @@ class tutorial_urukulFreqScan(EnvExperiment):
            
             
         self.urukul0_ch1.set(self.freq * MHz, amplitude = self.amp)  #writes frequency and amplitude variables to urukul channel thus outputting function
-        delay(self.t_pulse)                                              #2s delay
+        delay(self.t_pulse * s)                                              #2s delay
         self.urukul0_ch1.sw.off()                               #switches urukul channel off
