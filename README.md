@@ -51,7 +51,7 @@ Code demonstrating basic use of Urukul to output fixed frequency and amplitude w
 
 #### Urukul_GUI_Frequency_Input.py
 Code demostrating how to take inputs from the dashboard to select output frequency for the urukul
-- takes frequency input(in MHz) in build
+- Takes frequency input(in MHz) in build
 - Sets frequency, amplitude, and channel attenuation as variables
 - Switches channel on
 - Writes  amplitude and frequency to urukul
