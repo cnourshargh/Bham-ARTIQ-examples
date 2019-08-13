@@ -5,13 +5,12 @@ from artiq.experiment import*                                   #imports everyth
 #The ouput persists for 2 seconds and the turns off
 
 class tutorial_urukulFreqScan(EnvExperiment):
-    """Urukul Selectable Frequency Pulse"""
+    """Urukul Selectable Frequency, Amplitude,  Pulse"""
     def build(self): #This code runs on the host device
         
-
-        print(self.setattr_device("core"))                                              #sets core device drivers as attributes
-        self.setattr_device("urukul0_ch1")                                              #sets urukul0, channel 1 device drivers as attributes
-        self.setattr_argument("freq", NumberValue(ndecimals=0, unit="MHz", step=1))      #instructs dashboard to take input in MHz and set it as an attribute called freq
+        self.setattr_device("core")                                                         #sets core device drivers as attributes
+        self.setattr_device("urukul0_ch1")                                                  #sets urukul0, channel 1 device drivers as attributes
+        self.setattr_argument("freq", NumberValue(ndecimals=0, unit="MHz", step=1))         #instructs dashboard to take input in MHz and set it as an attribute called freq
         
     
     @kernel #This code runs on the FPGA
