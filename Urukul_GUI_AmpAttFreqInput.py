@@ -31,6 +31,6 @@ class tutorial_urukulFreqScan(EnvExperiment):
         self.urukul0_ch1.sw.on()                                #switches urukul channel on
            
             
-        self.urukul0_ch1.set(self.freq * MHz, amplitude = self.amp)  #writes frequency and amplitude variables to urukul channel thus outputting function
+        self.urukul0_ch1.set(self.freq, amplitude = self.amp)  #writes frequency and amplitude variables to urukul channel thus outputting function
         delay(self.t_pulse * s)                                              #2s delay
         self.urukul0_ch1.sw.off()                               #switches urukul channel off
