@@ -14,7 +14,7 @@ class tutorial_urukulFreqScan(EnvExperiment):
         self.setattr_argument("freq", NumberValue(ndecimals=0, unit="MHz", step=1))     #instructs dashboard to take input and set it as an attribute called freq
         self.setattr_argument("amp", NumberValue(ndecimals=2, step=1))     #instructs dashboard to take input and set it as an attribute called freq
         self.setattr_argument("atten", NumberValue(ndecimals=0, step=1))     #instructs dashboard to take input and set it as an attribute called freq
-        self.setattr_argument("t_pulse", NumberValue(ndecimals=0, unit = "s" step=1))     #instructs dashboard to take input and set it as an attribute called freq
+        self.setattr_argument("t_pulse", NumberValue(ndecimals=0, unit = "s", step=1))     #instructs dashboard to take input and set it as an attribute called freq
         
     
     @kernel #This code runs on the FPGA
