@@ -9,9 +9,9 @@ class tutorial_urukulFreqScan(EnvExperiment):
     def build(self): #This code runs on the host device
         
 
-        print(self.setattr_device("core"))                                  #sets core device drivers as attributes
-        self.setattr_device("urukul0_ch1")                                  #sets urukul0, channel 1 device drivers as attributes
-        self.setattr_argument("freq", NumberValue(ndecimals=0, unit="MHz" step=1))     #instructs dashboard to take input and set it as an attribute called freq
+        print(self.setattr_device("core"))                                              #sets core device drivers as attributes
+        self.setattr_device("urukul0_ch1")                                              #sets urukul0, channel 1 device drivers as attributes
+        self.setattr_argument("freq", NumberValue(ndecimals=0, unit="MHz" step=1))      #instructs dashboard to take input in MHz and set it as an attribute called freq
         
     
     @kernel #This code runs on the FPGA
@@ -28,6 +28,6 @@ class tutorial_urukulFreqScan(EnvExperiment):
         self.urukul0_ch1.sw.on()                                #switches urukul channel on
            
             
-        self.urukul0_ch1.set(self.freq, amplitude = amp)  #writes frequency and amplitude variables to urukul channel thus outputting function
+        self.urukul0_ch1.set(self.freq, amplitude = amp)        #writes frequency and amplitude variables to urukul channel thus outputting function
         delay(2*s)                                              #2s delay
         self.urukul0_ch1.sw.off()                               #switches urukul channel off
