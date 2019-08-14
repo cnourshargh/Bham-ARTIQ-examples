@@ -79,7 +79,7 @@ This code was sampling at 10.1kS/s when tested
 - Sets gains on all channels
 - Creates list for sample data
 - Loops the following 2000 times 
-  - Saves samples to list
+  - Saves samples(in machine units) to list
   - Adds 0th element of list to dataset
 
 From management system, dataset can be plotted with following applet
