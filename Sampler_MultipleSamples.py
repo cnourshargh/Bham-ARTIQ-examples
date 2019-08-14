@@ -15,9 +15,8 @@ class KasliTester(EnvExperiment):
     def run(self):
         self.core.reset()
         self.core.break_realtime()      #Time break to avoid underflow condition
-        self.set_dataset("samples", np.full(2000, np.nan), broadcast=True)
         self.sampler0.init()                  #initialises sampler
-        
+        self.set_dataset("samples", np.full(2000, np.nan), broadcast=True)
         n_channels = 8                  #sets number of channels to read off of
                                         #change this number to alter the nummber of channels being read from          
         
