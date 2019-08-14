@@ -11,14 +11,6 @@ class KasliTester(EnvExperiment):
         self.set_dataset("samples", np.full(2000, np.nan), broadcast=True)
     
     @kernel
-    def get_sampler_voltages(self, cb):
-        
-
-
-    def run_sampler(self):                       
-        
-                
-
     def run(self):
         self.core.reset()
         self.core.break_realtime()      #Time break to avoid underflow condition
