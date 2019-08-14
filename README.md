@@ -81,5 +81,6 @@ This code was sampling at 10.1kS/s when tested
 - Loops the following 2000 times 
   - Saves samples to list
   - Adds 0th element of list to dataset
+
 From management system, dataset can be plotted with following applet
 - ${artiq_applet}plot_xy samples
