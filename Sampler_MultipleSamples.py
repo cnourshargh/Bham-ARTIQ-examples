@@ -41,7 +41,7 @@ class KasliTester(EnvExperiment):
         
         for n in range(n_samples):                                                      #loops over number of samples do be taken
         
-            delay(80*us)                                                                #90us delay to prevent uderflow in sampling stage                                   
+            delay(90*us)                                                                #90us delay to prevent uderflow in sampling stage                                   
             self.sampler0.sample_mu(smp)                                                #runs sampler and saves to list 
             self.mutate_dataset("samples",n,smp[0])                                     #adds 0th element of list to dataset so voltage from lowest channel being used
 
