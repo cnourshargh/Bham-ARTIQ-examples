@@ -9,13 +9,13 @@ class KasliTester(EnvExperiment):
 
         self.setattr_device("core")                 #saves core device drivers as attributes
         self.setattr_device("sampler0")             #saves sampler device drivers as attributes
-        self.set_dataset("samples", np.full(2000, np.nan), broadcast=True)
+        
     
     @kernel
     def run(self):
         self.core.reset()
         self.core.break_realtime()      #Time break to avoid underflow condition
-        
+        self.set_dataset("samples", np.full(2000, np.nan), broadcast=True)
         self.sampler0.init()                  #initialises sampler
         
         n_channels = 8                  #sets number of channels to read off of
