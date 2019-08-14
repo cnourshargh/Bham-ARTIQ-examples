@@ -58,7 +58,7 @@ Code demostrating basic use of management system for taking inputs from user, by
 - Switches channel off
 
 #### Urukul_GUI_AmpAttFreqInput.py
-Code demonstrating how to take multiple inputs from the user in a single experiment#
+Code demonstrating how to take multiple inputs from the user in a single experiment
 - User inputs:
   - Frequency (in MHz)
   - Amplitude (as amplitude scale factor, so between 0 and 1)
