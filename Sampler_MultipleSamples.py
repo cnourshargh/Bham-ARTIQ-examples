@@ -37,8 +37,6 @@ class KasliTester(EnvExperiment):
             
         smp = [0]*n_channels                                                            #creates list of 8 floating point variables
         
-
-        
         for n in range(n_samples):                                                      #loops over number of samples do be taken
         
             delay(90*us)                                                                #90us delay to prevent uderflow in sampling stage                                   
