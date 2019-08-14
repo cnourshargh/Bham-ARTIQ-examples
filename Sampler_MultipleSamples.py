@@ -21,7 +21,8 @@ class KasliTester(EnvExperiment):
                                         #change this number to alter the nummber of channels being read from          
         
         for i in range(n_channels):              #loops for each sampler channel
-            self.sampler0.set_gain_mu(i, 0)   #sets each channel's gain to 0db               
+            self.sampler0.set_gain_mu(i, 0)   #sets each channel's gain to 0db        
+            delay(20*us)
         smp = [0]*n_channels          #creates list of 8 floating point variables
         
 
