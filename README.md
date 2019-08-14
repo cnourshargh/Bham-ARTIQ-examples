@@ -50,9 +50,23 @@ Code demonstrating basic use of Urukul to output fixed frequency and amplitude w
 - Switches channel off
 
 #### Urukul_GUI_Frequency_Input.py
-Code demostrating how to take inputs from the dashboard to select output frequency for the urukul
-- Takes frequency input(in MHz) in build
-- Sets frequency, amplitude, and channel attenuation as variables
+Code demostrating basic use of management system for taking inputs from user, by allowing user to input frequency
+- Takes frequency input(in MHz) in build and saves it as an attribute
+- Sets amplitude and channel attenuation as variables
 - Switches channel on
 - Writes  amplitude and frequency to urukul
+- Switches channel off
+
+#### Urukul_GUI_AmpAttFreqInput.py
+Code demonstrating how to take multiple inputs from the user in a single experiment#
+- User inputs:
+  - Frequency (in MHz)
+  - Amplitude (as amplitude scale factor, so between 0 and 1)
+  - Attenuation (in dB, between 0 and 31.5)
+  - Pulse duration (in seconds)
+- Sets above as attributes
+- Writes attenuation to channel
+- Switches Channel on
+- Writes amplitude and frequency to urukul
+- Waits specified duration
 - Switches channel off
