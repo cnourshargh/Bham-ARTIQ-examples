@@ -19,10 +19,9 @@ class KasliTester(EnvExperiment):
         self.set_dataset("samples", np.full(2000, np.nan), broadcast=True)
         n_channels = 8                  #sets number of channels to read off of
                                         #change this number to alter the nummber of channels being read from          
-        
+        self.core.break_realtime()
         for i in range(n_channels):              #loops for each sampler channel
             self.sampler0.set_gain_mu(i, 0)   #sets each channel's gain to 0db        
-            delay(200*us)
         smp = [0]*n_channels          #creates list of 8 floating point variables
         
 
