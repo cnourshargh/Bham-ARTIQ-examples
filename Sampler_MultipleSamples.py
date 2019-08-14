@@ -1,4 +1,5 @@
 from artiq.experiment import *                      #imports everything from experiment library
+import numpy as np
 
 #This code takes a single sample from all 8 sampler channels simultaneously 
 
