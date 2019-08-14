@@ -29,7 +29,7 @@ class KasliTester(EnvExperiment):
         for n in range(2000):
                                    
             self.sampler0.sample_mu(smp)                 #runs sampler and saves to list 
-            delay(70*us)                                    #shorter than 500us delays were causing underflow
+            delay(80*us)                                    #shorter than 500us delays were causing underflow
             self.mutate_dataset("samples",n,smp[0])
 
         
