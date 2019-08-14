@@ -72,8 +72,8 @@ Code demonstrating how to take multiple inputs from the user in a single experim
 - Switches channel off
 
 #### Sampler_MultipleSamples.py
-Code demonstrating how to take multiple samples from the sampler in rapid succession.
-This code was sampling at 10.1kS/s when tested
+Code demonstrating how to take multiple samples from the sampler in rapid succession. This code was sampling at 10.1kS/s when tested. 
+This was the fastest samling rate achievable without getting underflow errors.
 - Initialises sampler
 - Generates dataset to be written to
 - Sets gains on all channels
