@@ -71,6 +71,15 @@ Code demonstrating how to take multiple inputs from the user in a single experim
 - Waits specified duration
 - Switches channel off
 
+#### Zotino_RampOutput.py
+Code demonstrating how to output a ramp function on a Zotino channel. 
+This code produces a ramp between -10V and 10V in steps of 0.2V with a frequency of 1.28kHz.
+- Defines list of voltages(in machine units) for ramp
+- Loops the following until manually stopped(closing bash terminal or deleting experiment from queue in management system)
+  - Loops the following for all voltages in voltage list
+    - Writes voltage to DAC
+    - Loads voltage to output channel
+
 #### Sampler_MultipleSamples.py
 Code demonstrating how to take multiple samples from the sampler in rapid succession. This code was sampling at 10.1kS/s when tested. 
 This was the fastest samling rate achievable without getting underflow errors.
