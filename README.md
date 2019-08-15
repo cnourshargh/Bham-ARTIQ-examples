@@ -58,7 +58,7 @@ Code demostrating basic use of management system for taking inputs from user, by
 - Switches channel off
 
 #### Urukul_GUI_AmpAttFreqInput.py
-Code demonstrating how to take multiple inputs from the user in a single experiment#
+Code demonstrating how to take multiple inputs from the user in a single experiment
 - User inputs:
   - Frequency (in MHz)
   - Amplitude (as amplitude scale factor, so between 0 and 1)
@@ -70,3 +70,17 @@ Code demonstrating how to take multiple inputs from the user in a single experim
 - Writes amplitude and frequency to urukul
 - Waits specified duration
 - Switches channel off
+
+#### Sampler_MultipleSamples.py
+Code demonstrating how to take multiple samples from the sampler in rapid succession. This code was sampling at 10.1kS/s when tested. 
+This was the fastest samling rate achievable without getting underflow errors.
+- Initialises sampler
+- Generates dataset to be written to
+- Sets gains on all channels
+- Creates list for sample data
+- Loops the following 2000 times 
+  - Saves samples(in machine units) to list
+  - Adds 0th element of list to dataset
+
+From management system, dataset can be plotted with following applet
+- ${artiq_applet}plot_xy samples
