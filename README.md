@@ -51,7 +51,7 @@ Code demonstrating basic use of Urukul to output fixed frequency and amplitude w
 
 #### Urukul_GUI_Frequency_Input.py
 Code demostrating basic use of management system for taking inputs from user, by allowing user to input frequency
-- Takes frequency input(in MHz) in build and saves it as an attribute
+- Takes frequency input (in MHz) in build and saves it as an attribute
 - Sets amplitude and channel attenuation as variables
 - Switches channel on
 - Writes  amplitude and frequency to urukul
@@ -71,6 +71,15 @@ Code demonstrating how to take multiple inputs from the user in a single experim
 - Waits specified duration
 - Switches channel off
 
+#### Zotino_RampOutput.py
+Code demonstrating how to output a ramp function on a Zotino channel. 
+This code produces a ramp between -10V and 10V in steps of 0.2V with a frequency of 1.28kHz.
+- Defines list of voltages (in machine units) for ramp
+- Loops the following until manually stopped (closing bash terminal or deleting experiment from queue in management system)
+  - Loops the following for all voltages in voltage list
+    - Writes voltage to DAC
+    - Loads voltage to output channel
+
 #### Sampler_MultipleSamples.py
 Code demonstrating how to take multiple samples from the sampler in rapid succession. This code was sampling at 10.1kS/s when tested. 
 This was the fastest samling rate achievable without getting underflow errors.
@@ -79,7 +88,7 @@ This was the fastest samling rate achievable without getting underflow errors.
 - Sets gains on all channels
 - Creates list for sample data
 - Loops the following 2000 times 
-  - Saves samples(in machine units) to list
+  - Saves samples (in machine units) to list
   - Adds 0th element of list to dataset
 
 From management system, dataset can be plotted with following applet
