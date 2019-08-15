@@ -24,7 +24,7 @@ class ZotinoOutputs(EnvExperiment):
         self.zotino0.init()                                     #initialises zotino
         delay(200*us)                                           #200us delay, to prevent underflow
 
-        while(1):                                               #loops until manually broken
+        while(1):                                               #loops until manually broken(from bash terminal, this requires closing terminal)
             for voltage in voltages_mu:                         #loops over all voltages in voltages_mu list
                     
                 self.zotino0.write_dac_mu(0, voltage)           #writes voltage in machine units to output channel buffer register for v
