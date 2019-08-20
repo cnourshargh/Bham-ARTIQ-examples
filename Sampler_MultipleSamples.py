@@ -7,7 +7,7 @@ import numpy as np                                  #imports everything from num
 
 #sampling frequency = 10.1kHz
 
-class KasliTester(EnvExperiment):
+class Sampler_Multiple_Samples(EnvExperiment):
     """Sampler Multiple Samples"""
     def build(self): #this code runs on the host device
 

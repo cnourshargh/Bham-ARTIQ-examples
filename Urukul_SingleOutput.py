@@ -3,7 +3,7 @@ from artiq.experiment import*                                   #imports everyth
 #This code outputs a predefined frequency at a fixed amplitude on a single channel of the urukul
 #The ouput persists for 2 seconds and the turns off
 
-class tutorial_urukulFreqScan(EnvExperiment):
+class Urukul_Frequency_Pulse(EnvExperiment):
     """Urukul Single Frequency Pulse"""
     def build(self): #This code runs on the host device
 

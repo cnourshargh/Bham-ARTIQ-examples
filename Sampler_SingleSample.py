@@ -2,7 +2,7 @@ from artiq.experiment import *                      #imports everything from exp
 
 #This code takes a single sample from all 8 sampler channels simultaneously 
 
-class KasliTester(EnvExperiment):
+class Sampler_Single_Sample(EnvExperiment):
     """Sampler Single Sample"""
     def build(self): #this code runs on the host device
 

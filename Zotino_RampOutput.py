@@ -3,7 +3,7 @@ from artiq.experiment import *                                  #imports everyth
 #This code outputs a ramp wave on a single channel of the zotino 
 #The wave ramps from -10v to 10v with a frequency of 1.28kHz
 
-class ZotinoOutputs(EnvExperiment):
+class Zotino_Ramp_Generator(EnvExperiment):
     """Zotino: Ramp Generator"""
     def build(self): #this code runs from the host device
 

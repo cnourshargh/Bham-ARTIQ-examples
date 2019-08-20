@@ -5,7 +5,7 @@ from artiq.experiment import *                  #imports everything from artiq e
 
 #to view the trace from this on a scope, use a single trigger with at least 16ms measured on scope
 
-class tutorial_TTLrtio(EnvExperiment):
+class TTL_Output_On_Off_Pulse(EnvExperiment):
     """TTL Output On, Off, Pulse"""
     def build(self): #This code rus on host device     
 

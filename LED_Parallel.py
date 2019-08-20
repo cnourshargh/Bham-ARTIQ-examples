@@ -2,7 +2,7 @@ from artiq.experiment import*                   #imports everything from artiq e
 
 #example code for using with parallel and with sequential
 
-class tutorial_LEDrealTime(EnvExperiment):
+class LED_Parallel(EnvExperiment):
     """LED Parallel"""
     def build(self): #Adds the device drivers as attributes and adds the keys to the kernel invarients
     

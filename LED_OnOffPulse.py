@@ -3,7 +3,7 @@ from artiq.experiment import*                   #imports everything from artiq e
 #minimum working code for using led0
 #turns led0 on, off, and then pulses it
 
-class tutorial_LEDrealTime(EnvExperiment):
+class LED_On_Off_Pulse(EnvExperiment):
     """LED On, Off, Pulse"""
     def build(self): #Adds the device drivers as attributes and adds the keys to the kernel invarients
     

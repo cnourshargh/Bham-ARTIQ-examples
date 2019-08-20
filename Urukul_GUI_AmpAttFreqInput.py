@@ -7,7 +7,7 @@ from artiq.experiment import*                                   #imports everyth
 #attenuation(in db, between 0 and 31.5)
 #pulse length(in s)
 
-class tutorial_urukulFreqScan(EnvExperiment):
+class Urukul_Programmable(EnvExperiment):
     """Urukul Selectable Frequency, Amplitude, Attenuation and Pulse Length"""
     def build(self): #This code runs on the host device
         

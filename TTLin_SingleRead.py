@@ -2,7 +2,7 @@ from artiq.experiment import *                  #imports everything from artiq e
 
 #This code takes a single read from TTL0 and prints the voltage 
 
-class tutorial_TTLrtio(EnvExperiment):
+class TTL_Input_Read(EnvExperiment):
     """TTL Input Read"""
     def build(self): #This code runs on the host device
 

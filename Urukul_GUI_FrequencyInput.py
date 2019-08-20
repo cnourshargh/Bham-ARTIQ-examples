@@ -4,7 +4,7 @@ from artiq.experiment import*                                   #imports everyth
 #the output frequency must be inputted in MHz from the dahsboard
 #The ouput persists for 2 seconds and the turns off
 
-class tutorial_urukulFreqScan(EnvExperiment):
+class Urukul_Frequency_Selectable(EnvExperiment):
     """Urukul Selectable Frequency"""
     def build(self): #This code runs on the host device
         

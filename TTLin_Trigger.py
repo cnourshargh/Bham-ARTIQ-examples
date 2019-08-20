@@ -6,7 +6,7 @@ from artiq.experiment import *                  #imports everything from artiq e
 
 #pulses occur 5.158us appart with about 1ns jitter
 
-class tutorial_TTLrtio(EnvExperiment):
+class TTL_Input_As_Trigger(EnvExperiment):
     """TTL Input Edge as Trigger"""
     def build(self): #Adds the device drivers as attributes and adds the keys to the kernel invarients     
 

@@ -2,7 +2,7 @@ from artiq.experiment import *                  #imports everything from artiq e
 
 #This code outputs a single voltage on a single Zotino channel
 
-class ZotinoOutputs(EnvExperiment):
+class Zotino_Single_Output(EnvExperiment):
     """Zotino Single Output"""
     def build(self): #this code runs on the host device
 
