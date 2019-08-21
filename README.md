@@ -106,6 +106,6 @@ Code demonstrating use of RAM on Urukul. We had hoped to be able to use RAM for 
   - In Parallel:
     - Pulses TTL channel
     - Starts ramping up through list
-  - In Parallel
+  - In Parallel:
     - Pulses TTL channel
     - Starts ramping down through list
