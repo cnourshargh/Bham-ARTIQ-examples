@@ -93,3 +93,19 @@ This was the fastest samling rate achievable without getting underflow errors.
 
 From management system, dataset can be plotted with following applet
 - ${artiq_applet}plot_xy samples
+
+#### Urukul_RAM_Amplitude.py
+Code demonstrating use of RAM on Urukul. We had hoped to be able to use RAM for frequency scans and it appeared that this was not possible so we only have code demonstrating an amplitude scan. The doccumentation for using RAM mode was limitted which is why the comments are not as clear as on some other code
+- Produces list of amplitudes to be output
+- Initialises CPLD and Urukul Channel
+- Sets RAM Profile
+- Writes to the CFR(control function register)
+- Sets channel frequency and attenuation
+- Switches channel on
+- Loops following until manually broken
+  - In Parallel:
+    - Pulses TTL channel
+    - Starts ramping up through list
+  - In Parallel
+    - Pulses TTL channel
+    - Starts ramping down through list
