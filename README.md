@@ -1,5 +1,6 @@
 # Bham-ARTIQ-examples
-A repository of simple examples of ARTIQ code
+This repository, along with the associated wiki, was produced in August 2019 by Camron Nourshargh and Rustin Nourshargh while working in the Atom Interferometry Group at Birmingham University. It was produced as a summer project, the main goals of which were to gain a better understanding of how to use ARTIQ, and to produce example code and documentation to introduce beginners to the Sinara Device.
+
 
 For further details, see [wiki](https://github.com/cnourshargh/Bham-ARTIQ-examples/wiki)
 
