@@ -17,10 +17,7 @@ class TTL_Output_On_Off_Pulse(EnvExperiment):
     
         self.core.reset()                       #resets core device
         self.ttl6.output()                      #sets TTL6 as an output
-        
-        self.core.break_realtime()              #moves timestamp forward to prevent underflow
-                                                #this can also be achieved with a fixed delay
-                                                
+        delay(1*us)                             #moves timestamp forward to prevent collision between ttl6.output and ttl6.on although appears not to be neccessary in this case.
         self.ttl6.on()                          #sets TTL6 output to high
         delay(5*ms)                             #5ms delay
         
